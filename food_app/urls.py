@@ -8,5 +8,6 @@ urlpatterns = [
     # path for details basd on id
     path('details/<int:item_id>', food_app.views.details, name="details"),
     # path for edit based on id
-    path('edit/<int:item_id>', food_app.views.edit, name="edit")
+    path('edit/<int:item_id>', food_app.views.edit, name="edit"),
+    path('add_item', food_app.views.add_item, name="add_item")
 ]

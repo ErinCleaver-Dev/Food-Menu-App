@@ -30,6 +30,10 @@ def details(request, item_id):
     }
     return render(request, template, context)
 
+def add_item(request):
+    template = 'add_item.html'
+    return render(request, template)
+
 def edit(request, item_id):
     template = 'edit_item.html'
     # creates a dictonary of food_items

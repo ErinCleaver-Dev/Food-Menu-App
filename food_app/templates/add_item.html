@@ -1,5 +1,30 @@
 {% extends "layout.html" %}
 {% block title %}Add Item{% endblock %}
 {% block content %}
-add item
+
+    <h1>Add new item</h1>
+    <form id="form_formated">
+        <div class="input_field">
+            <label  class="form_label" for="inputname">Name</label>
+            <input class="form_input" type="text" id="inputname">
+        </div>
+        <div class="input_field">
+            <label class="form_label" for="TextareaDescription">Description</label>
+            <textarea class="form_input" id="TextareaDescription" rows="3"></textarea>
+        </div>
+        <div class="input_field">
+            <label class="form_label"  for="inputnumber">Price</label>
+            <input class="form_input" type="number" id="inputnumber">
+        </div>
+        <div class="input_field">
+            <label class="form_label"  for="inputname">Type</label>
+            <input class="form_input" type="text" id="inputname">
+        </div>
+        <div class="input_field" class="input_field">
+            <label class="form_label" for="inputurl">Image link</label>
+            <input class="form_input" type="url" id="inputurl">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
 {% endblock %}

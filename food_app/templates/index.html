@@ -4,7 +4,7 @@
 {% for food_item in food_list %}
     <a href = "{% url 'food_app:details' item_id=food_item.id %}" class="details_box"> 
         <img src={{ food_item.item_image }} width="200px" height="200px">
-        <div>
+        <div class="details">
             <div>
             {{ food_item.item_name }}
             </div>

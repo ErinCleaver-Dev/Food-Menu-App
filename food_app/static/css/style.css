@@ -2,6 +2,10 @@ body {
     background-color: rgb(211, 211, 211);
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 .navbar-toggler {
     padding: 0.25rem 0.5rem !important;
     border: 3px solid white !important;
@@ -42,5 +46,43 @@ body {
 .button_box {
     padding: 5px;
 }
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form_formated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 5%;
+}
 
+.input_field {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+}
 
+.form_label {
+    width: 100px;
+}
+.form_input {
+    width: 200px;
+}
+
+@media only screen and (max-width: 400px) {
+    .input_field {
+
+        flex-direction: column;
+    }
+    .form_label {
+        width: auto;
+    }
+}
