@@ -26,3 +26,21 @@ body {
 .formated_link {
     text-decoration: none
 }
+
+.details_box {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    max-width: 700px;
+    border-radius: 2%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px black solid;
+    border-width: 2px 0px;
+}
+
+.button_box {
+    padding: 5px;
+}
+
+

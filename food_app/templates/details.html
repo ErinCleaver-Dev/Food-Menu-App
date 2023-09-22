@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
-{% block title %}Home Page{% endblock %}
+{% block title %}details{% endblock %}
 {% block content %}
-{% for food_item in food_list %}
-    <a href = "{% url 'food_app:details' item_id=food_item.id %}" class="details_box"> 
+    <div class="details_box"> 
         <img src={{ food_item.item_image }} width="200px" height="200px">
         <div>
             <div>
@@ -15,7 +14,9 @@
             {{ food_item.item_price }}
             </div>
         </div>
-    </a>
-{% endfor %}
+    </div>
+    <div class="button_box">
+        <a href="{% url 'food_app:edit' item_id=food_item.id %}" class="btn btn-primary" type="button">Edit</a>
+        <button class="btn btn-primary" type="button">Delete</button>
+    </div>
 {% endblock %}
-
